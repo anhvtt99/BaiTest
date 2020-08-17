@@ -1,0 +1,754 @@
+ /*header*/
+    /*top*/
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container1{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        float: left;
+    }
+    .topbar{
+        float:right;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-right: 10%;
+    }
+    .topbar>li a{
+        font-family: "Open Sans";
+        display: block;
+        font-size: 12px;
+        color: rgb(187, 187, 187);
+        padding:0px 4px;
+        text-decoration: none;
+    }
+    .topbar>li:nth-child(2)
+    {
+        border-left: 1px solid rgb(187, 187, 187);
+        border-right: 1px solid rgb(187, 187, 187);
+    }
+    /*bottom*/
+    .container2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .bottombar{             
+        margin-bottom: 0;
+        padding-bottom: 0;
+        width: fit-content;
+        margin-right: 10%;
+    }
+    .nav{
+        width: fit-content;
+        list-style-type: none;
+        margin: 0;
+        padding-top: 7px;
+        overflow: hidden;
+        float: left;
+        vertical-align: text-bottom;
+    }
+    .nav>li a{
+        display: block;
+        padding: 8px 20px;
+        font-size: 15px;
+        font-family: "Open Sans";
+        color: #687074;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    #active{
+        border-bottom: 2px solid  rgb(116, 197, 44);
+        color:  rgb(116, 197, 44);;
+    }
+    #Search{
+        width: 43px;
+        height: 45px;
+        color: rgb(184, 184, 184);
+        background-color: #f9f9f9;
+        border: none;
+        border-bottom: 2px solid #b8b8b8;
+        float: right;
+    }
+    /* logo */
+    #unify {
+    font-size: 37px;
+    font-family: "Open Sans";
+    color: #687074;
+    line-height: 1.2;
+    position: absolute;
+    padding-left: 10px;
+    background-image: url(/app/images/Shape\ 1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    }
+    #unify::first-letter{
+        color: rgb(255, 255, 255);
+    }
+    #logo{
+        width: 25%;
+        margin-left: 10%;
+        position: relative;
+    }
+    /*content*/
+    /*slideshow*/
+    .slideshow{
+        background-image: url('/app/images/IMG.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 710px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        text-align: center;
+    }
+    .WELCOME_TO_UNIFY {
+        font-size: 75px;
+        font-family:"Open Sans";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: center;
+    }
+    .Unify_is_creative_technology_company_providing_ {
+        font-size: 24px;
+        font-family: "Open Sans";
+        color: rgb(255, 255, 255);
+        line-height: 1.583;
+        text-align: center;
+        margin-bottom: 51px;
+        margin-top: 54px;
+    }
+    .BORDER2 {
+        background-color: Transparent;
+        border-width: 1.25px;
+        border-color:rgb(255, 255, 255);
+        border-style: solid;
+        width: 172.5px;
+        height: 39.5px;
+        margin-right: 7px;
+    }
+    .Read_About_Us {
+        font-size: 18px;
+        font-family: "Open Sans";
+        color: rgb(255, 255, 255);
+        line-height: 2.111;
+        left: 605.933px;
+        top: 566.872px;
+        width: 127px;
+        height: 14px;
+    }
+    .BORDER1 {
+        padding: 0;
+        border: none;
+        background-color:  rgb(116, 197, 44);
+        width: 175px;
+        height: 42px;
+        margin-left: 7px;
+    }
+    .Visit_Our_Work {
+        font-size: 18px;
+        font-family: "Open Sans";
+        color: rgb(255, 255, 255);
+        line-height: 2.111;
+        width: 126px;
+        height: 14px;
+    }
+    .container{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    /*agency*/
+    .agency{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0;
+    }
+    .WE_ARE_UNIFY_AGENCY1 {
+        font-size: 24px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        color: rgb(85, 85, 85);
+        line-height: 1.2;
+        text-align: center;
+        height: 19px;
+        position: relative;
+    }
+    .WE_ARE_UNIFY_AGENCY1::after{
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 74px;
+        background-color: #555555;
+        bottom: -17px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .If_you_are_going_to_use_a_passage_of_Lorem_Ipsu {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+        line-height: 1.571;
+        text-align: center;
+        margin-bottom: 74px;
+        margin-top: 45px;
+        padding: 0px 43px;
+    }
+    .agencyCotent{
+        display:flex;
+    }
+    .agencyCotentItem
+    {
+        width: 33.33%;
+        display: flex;
+    }
+    .icon{
+        width: 43px;
+        color: rgb(116, 197, 44);
+        font-size: xx-large;
+    }
+    .agencyContentItemContent{
+        width:80%;
+    }
+    .Learnmore {
+        font-size: 11px;
+        font-family: "Helvetica Neue";
+        color: rgb(119, 119, 119);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .CREATIVE_IDEAS {
+        font-size: 18px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+    }
+    .It_is_a_long_established_fact_that_a_reader_wil {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+    }
+    /*Video*/
+    .Video{
+        display: flex;
+        background-color: #f7f7f7;
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-top: 62px;
+        padding-bottom: 93px;
+    }
+    .VideoImag{
+        width: 50%;
+    }
+    .VideoContent{
+        width: 50%;
+    }
+    .WE_ARE_UNIFY_AGENCY2 {
+        font-size: 24px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        color: rgb(85, 85, 85);
+        line-height: 1.2;
+        height: 19px;
+        position: relative;
+    }
+    .WE_ARE_UNIFY_AGENCY2::after{
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 74px;
+        background-color: #555555;
+        bottom: -17px;
+        left: 0%;
+        transform: translateX(0%);
+    }
+    .There_are_many_variations_of_passages {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+        margin-top: 49px;
+        margin-bottom: 25px;
+    }
+    .If_you_are_going_{
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+        margin-bottom: 40px;
+    }
+    .Purchase_Now {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: center;
+        background-color: rgb(114, 192, 44);
+        width: 120px;
+        height: 35px;
+        border: none;
+        margin-left: 12px;
+    }
+    .Read_More {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+        line-height: 1.2;
+        text-align: center;
+        border-width: 0.833px;
+        border-color: rgb(85, 85, 85);
+        border-style: solid;
+        width: 100px;
+        height: 35px;
+        margin-left: 4px;
+    }
+    /*Read*/
+    .READ{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 78px;
+        padding-bottom: 81px;
+    }
+    .READ_ABOUT_US {
+        font-size: 24px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        text-align: center;
+        color: rgb(85, 85, 85);
+        line-height: 1.2;
+        height: 19px;
+        position: relative;
+    }
+    .READ_ABOUT_US::after{
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 74px;
+        background-color: #555555;
+        bottom: -17px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .READ>.If_you_are_going_to_use_a_passage_of_Lorem_Ipsu{
+        margin-top: 49px;
+        margin-bottom: 59px;
+    }
+    .table{
+        display: flex;
+    }
+    .col{
+        width: 33.33%;
+    }
+    .col>h3{
+        margin-top: 25px;
+        margin-bottom: 18px;
+        font-size: 15px;
+        font-family: "Open Sans";
+        font-weight: 500;
+        color: rgb(85, 85, 85);
+    }
+    .col>p {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+        margin-bottom: 26px;
+    }
+    .st{
+        margin-right: 42px;
+    }
+    .tr{
+        margin-left: 42px;
+    }
+    .SEEMORE {
+        font-size: 12px;
+        font-family: "Open Sans";
+        color: rgb(114, 192, 44);
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    /*black*/
+    .Black{
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 10%;
+    }
+    .Black>div>.WE_ARE_UNIFY_AGENCY1, .Black>div>.If_you_are_going_to_use_a_passage_of_Lorem_Ipsu{
+        color:rgb(255, 255, 255);
+    }
+    .Black>div>.If_you_are_going_to_use_a_passage_of_Lorem_Ipsu{
+        margin-bottom: 50px;
+    }
+    .Black>div>.WE_ARE_UNIFY_AGENCY1::after{
+        background-color: rgb(255, 255, 255);;
+    }
+    .box{
+        display: flex;
+    }
+    .boxItem{
+        color: rgb(255, 255, 255);;
+        width: 25%;
+        border: 1px solid #555555;
+        padding: 23px 0px;
+    }
+    .num {
+        font-size: 43px;
+        font-family: "Open Sans";
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .boxItemContent {
+        font-size: 16px;
+        font-family: "Open Sans";
+        color: rgb(187, 187, 187);
+        text-align: center;
+    }
+    .box1,.box2{
+        margin-right: 40px;
+    }
+    .box4{
+        margin-left: 40px;
+    }
+    /*2col*/
+    .col2{
+        display: flex;
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .col2>.col{
+        width: 50%;
+    }
+    .row{
+        display:flex;
+        margin-bottom: 46px;
+    }
+    .rowContent1,.rowContent2{
+        width: 83%;
+    }
+    .rowIcon1,.rowIcon2{
+        width: 17%;
+        text-align: center;
+    }
+    .rowIcon1>i{
+        color: #f7f7f7;
+        width: 60px;
+        height: 60px;
+        background-color: #72c02c;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: x-large;
+    }
+    .rowIcon2>i{
+        color: #f7f7f7;
+        width: 60px;
+        height: 60px;
+        background-color: #333333;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: x-large;
+    }
+    .rowContent1>h3 {
+        font-size: 18px;
+        font-family: "Open Sans";
+        color: rgb(88, 95, 105);
+        text-align: right;
+        font-weight: 400;
+        padding-bottom: 0%;
+        margin-bottom: 20px;
+    }
+    .rowContent1>p {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+        text-align: right;
+      }
+    .rowContent2>h3 {
+        font-size: 18px;
+        font-family: "Open Sans";
+        color: rgb(88, 95, 105);
+        text-align: left;
+        font-weight: 400;
+        padding-bottom: 0%;
+        margin-bottom: 20px;
+    }
+    .rowContent2>p {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+        text-align: left;
+    }
+    /*pic*/
+    .pic{
+        display: flex;
+    }
+    .picItem{
+        width: 25%;
+    }
+    .picItem>img{
+        width: 100%;
+        display: block;
+    }
+    /*web*/
+    .web{
+        display: flex;
+        background-color: #f7f7f7;
+        padding:70px 10%;
+    }
+    .WebContent{
+        width: 50%;
+    }
+    .webImag{
+        width: 50%;
+        text-align: center;
+    }
+    /*Member*/
+    .Member{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 90px;
+        padding-bottom: 70px;
+    }
+    .MemberInfo{
+        display: flex;
+    }
+    .MemberInfoItem{
+        width: 25%;
+    }
+    .job{
+        font-size: 11px;
+        font-family: "Open Sans";
+        color: rgb(153, 153, 153);
+        position: relative;
+        margin-bottom: 34px;
+        margin-top: 16px;
+    }
+    .job::after{
+        content: '';
+        position: absolute;
+        width: 43px;
+        height: 1px;
+        background-color: rgb(153, 153, 153);
+        bottom: -16px;
+        left: 0%;
+        transform: translateX(0%);
+    }
+    .name {
+        font-size: 18px;
+        font-family: "Open Sans";
+        color: rgb(0, 0, 0);
+        margin-top: 21px;
+        font-weight: 500;
+    }
+    .dis {
+        font-size: 11px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+        width: 209px;
+    }
+    .Member1,.Member2{
+        margin-right: 24px;
+    }
+    .Member4{
+        margin-left: 24px;
+    }
+    .Member>div>.If_you_are_going_to_use_a_passage_of_Lorem_Ipsu{
+        margin-bottom: 70px;
+    }
+    /*PORTFOLIO*/
+    .PORTFOLIO{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        padding: 70px 10%;
+    }
+    .PORTContent{
+        text-align: center;
+    }
+    .PORTContent>.If_you_are_going_to_use_a_passage_of_Lorem_Ipsu{
+        margin-bottom: 37px;
+    }
+    .Read_About_Us2 {
+        background-color: Transparent;
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(85, 85, 85);
+        text-align: center;
+        border-width: 0.833px;
+        border-color: rgb(85, 85, 85);
+        border-style: solid;
+        width: 125px;
+        height: 35px;
+        margin-right: 8px;
+    }
+    .View_Our_Portfolio {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 140px;
+        height: 35px;
+        background-color: rgb(114, 192, 44);
+        border: none;
+    }
+    /*footer*/
+    /*top*/
+    .footerTop{
+        display: flex;
+        background-color: #272727;
+        padding:42px 10%;
+    }
+    .footerTopCol{
+        width: 25%;
+    }
+    .footerLogo {
+        font-size: 37px;
+        font-family: "Open Sans";
+        color: rgb(255, 255, 255);
+        background-image: url('/app/images/Shape\ 1.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 10px;
+    }
+    .footerTopContent{
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(218, 218, 218);
+    }
+    .cont1{
+        margin: 25px 0px;
+    }
+    .TopCol1,.TopCol2{
+        margin-right: 40px;
+    }
+    .TopCol4{
+        margin-left: 40px;
+        background-image: url('/app/images/Layer_62-removebg-preview.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .footerTopCol>h2{
+        font-size: 22px;
+        font-family: "Open Sans";
+        color: rgb(228, 228, 228);
+        position: relative;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .footerTopCol>h2::after{
+        width: 60%;
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 40%;
+        padding-bottom: 12px;
+        border-bottom: 2px dotted rgb(228, 228, 228);
+    }
+    .footerTopCol>h2::before{
+        width: 40%;
+        content: '';
+        position: absolute;
+        left: 0%;
+        top : 100%;
+        padding-bottom: 12px;
+        border-bottom: 3px solid rgb(114, 192, 44);
+    }
+    .PostInfo {
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(238, 238, 238);
+        margin-bottom: 11px;
+    }
+    .PostDate {
+        font-size: 11px;
+        font-family: "Open Sans";
+        color: rgb(153, 153, 153);
+    }
+    .PostContent{
+        padding-bottom: 17px;
+        border-bottom: #353535 solid 1px;
+        margin-top: 20px;
+    }
+    .LinkInfo{
+        font-size: 11px;
+        font-family: "Open Sans";
+        color: rgb(238, 238, 238);
+        width: fit-content;
+    }
+    .LinkContent>i{
+        color: rgb(238, 238, 238);
+        font-size: 11px;
+        position: absolute;
+        top:50%;
+        right:0;
+        transform: translateY(-50%);
+    }
+    .LinkContent{
+        width: 100%;
+        position: relative;
+    }
+    .LinkRow{
+        margin-top: 13px;
+        padding-bottom: 14px;
+        border-bottom: #353535 solid 1px;
+    }
+    .ContactContent{
+        font-size: 13px;
+        font-family: "Open Sans";
+        color: rgb(218, 218, 218);
+        margin-bottom: 16px;
+    }
+    #email{
+        font-size: 13px;
+        font-family: "Open Sans";
+        color: rgb(114, 192, 44);
+        text-decoration: none;
+    }
+    /*bottom*/
+    .footerBottom{
+        padding:24px 10%;
+        background-color: #222222;
+        display: flex;
+    }
+    .copyright,.network
+    {
+        width: 50%;
+    }
+    .copyContent{
+        font-size: 12px;
+        font-family: "Open Sans";
+        color: rgb(255, 255, 255);
+    }
+    .copyContent>a{
+        font-size: 12px;
+        font-family: "Open Sans";
+        color: #72c02c;
+        text-decoration: none;
+    }
+    .network{
+        text-align: right;
+    }
+    .network>a>i{
+        font-size: 16px;
+        color: rgb(119, 119, 119);
+    }
+    .network>a
+    {
+        margin-left: 15px;
+        text-decoration: none;
+    }
