@@ -565,11 +565,77 @@ li {
 
 .picItem {
   width: 25%;
+  position: relative;
 }
 
 .picItem > img {
   width: 100%;
   display: block;
+}
+
+.picItem:hover .picText {
+  opacity: 1;
+}
+
+.picText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.52);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.picText > div {
+  text-align: center;
+}
+
+.picText > div > p {
+  padding-top: 41px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.picText > div > h2 {
+  font-size: 22px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+}
+
+.picText > div > h2::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 41px;
+  background-color: rgb(255, 255, 255);
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.picButton {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 97.5px;
+  height: 32.5px;
+  border-width: 1.25px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: transparent;
 }
 /*web*/
 .web {
@@ -601,6 +667,43 @@ li {
 
 .MemberInfoItem {
   width: 25%;
+}
+
+.MemberContain {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MemberContain:hover div {
+  opacity: 1;
+}
+
+.MemberContain > div {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.52);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40%;
+  padding-bottom: 40%;
+  opacity: 0;
+}
+
+.MemberContain > div > a > i {
+  color: #f7f7f7;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px #f7f7f7 solid;
+  text-align: center;
+  line-height: 35px;
+  margin: 0 6px;
 }
 
 .job {
@@ -750,7 +853,7 @@ li {
   top: 100%;
   left: 40%;
   padding-bottom: 12px;
-  border-bottom: 2px dotted rgb(228, 228, 228);
+  border-bottom: 1px dotted rgb(228, 228, 228);
 }
 
 .footerTopCol > h2::before {
@@ -760,7 +863,7 @@ li {
   left: 0%;
   top: 100%;
   padding-bottom: 12px;
-  border-bottom: 3px solid rgb(114, 192, 44);
+  border-bottom: 2px solid rgb(114, 192, 44);
 }
 
 .PostInfo {
